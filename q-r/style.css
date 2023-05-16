@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-container {
+  border: 1px solid rgb(180, 163, 163);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+  border-radius: 8px;
+  height: 100vh;
+}
+.home-logo img {
+  margin-top: 20px;
+}
+.home-things {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
+}
+.home-things {
+  margin: 40px;
+}
+.home-food {
+  font-size: 40px;
+  border-radius: 20px;
+  padding: 20px 60px 20px 60px;
+  background-color: black;
+  color: yellow;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+.home-drink {
+  font-size: 40px;
+  border-radius: 20px;
+  padding: 20px 60px 20px 60px;
+  background-color: black;
+  color: yellow;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
