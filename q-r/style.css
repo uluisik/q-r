@@ -64,14 +64,40 @@ body {
   cursor: pointer;
 }
 .pizza-container {
-  border: 1px solid blue;
-}
-.pizza-box {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+  border-radius: 8px;
+}
+.pizza-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin-bottom: 10px;
 }
 .pizza-desc {
   display: flex;
   justify-content: space-between;
+}
+.pizza-title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: xx-large;
+  font-style: italic;
+}
+.pizza-name {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: x-large;
+}
+.pizza-box img {
+  width: 100%;
+  height: auto;
+}
+.pizza-left {
+  text-align: start;
 }
