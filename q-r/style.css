@@ -16,10 +16,12 @@ body {
   width: 100%;
   margin: 20px;
   border-radius: 8px;
-  height: 100vh;
+  height: 100%;
+  margin: 20px;
 }
 .home-logo img {
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 .home-things {
   display: flex;
@@ -38,6 +40,7 @@ body {
   color: yellow;
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000;
+  cursor: pointer;
 }
 .home-drink {
   font-size: 40px;
@@ -47,4 +50,28 @@ body {
   color: yellow;
   -webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000;
+  cursor: pointer;
+}
+.food-item {
+  width: 100%;
+  font-size: 40px;
+  border-radius: 20px;
+  padding: 20px 60px 20px 60px;
+  background-color: black;
+  color: yellow;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  cursor: pointer;
+}
+.pizza-container {
+  border: 1px solid blue;
+}
+.pizza-box {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.pizza-desc {
+  display: flex;
+  justify-content: space-between;
 }
