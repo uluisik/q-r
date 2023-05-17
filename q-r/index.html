@@ -6,16 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <style>
+      #otherContent {
+        display: none;
+      }
+    </style>
   </head>
   <body>
-    <div class="home-container">
-      <div class="home-logo">
-        <img class="image-1" src="./images/barbuburger_sar_logo.png" />
-      </div>
-      <div class="home-things">
-        <a href="./food.html"><button class="home-food">Yiyeceler</button></a>
-        <a href="./drink.html"><button class="home-drink">İçeçekler</button></a>
+    <div>
+      <video
+        id="myVideo"
+        preload="auto"
+        controls
+        autoplay
+        width="400"
+        height="300"
+      >
+        <source
+          src="./video/Restoran ve diğer 2 sayfa - Kişisel - Microsoft​ Edge 2023-05-17 12-07-09.mp4"
+          type="video/mp4"
+        />
+        <!-- Alternatif video formatları için buraya eklemeler yapabilirsiniz -->
+      </video>
+    </div>
+    <div id="otherContent" class="home">
+      <div class="home-container">
+        <div class="home-logo">
+          <img class="image-1" src="./images/barbuburger_sar_logo.png" />
+        </div>
+        <div class="home-things">
+          <a href="./food.html"><button class="home-food">Yiyeceler</button></a>
+          <a href="./drink.html"
+            ><button class="home-drink">İçeçekler</button></a
+          >
+        </div>
       </div>
     </div>
+
+    <script>
+      var video = document.getElementById("myVideo");
+      var otherContent = document.getElementById("otherContent");
+
+      video.onended = function () {
+        otherContent.style.display = "block";
+        video.style.display = "none";
+      };
+    </script>
   </body>
 </html>

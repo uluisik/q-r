@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Video ve Yazılar</title>
+    <style>
+      #otherContent {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="myVideo" controls>
+      <source
+        src="./video/Restoran ve diğer 2 sayfa - Kişisel - Microsoft​ Edge 2023-05-17 12-07-09.mp4"
+        type="video/mp4"
+      />
+      <!-- Alternatif video formatları için buraya eklemeler yapabilirsiniz -->
+    </video>
+
+    <div id="otherContent">
+      <h1>Diğer Yazılar</h1>
+      <p>Bu yazılar video bittikten sonra görüntülenecektir.</p>
+    </div>
+
+    <script>
+      var video = document.getElementById("myVideo");
+      var otherContent = document.getElementById("otherContent");
+
+      video.onended = function () {
+        otherContent.style.display = "block";
+        video.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
